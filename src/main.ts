@@ -74,8 +74,12 @@ let rodando = true;
           }
         }
       }
-      logger.log(`Persistindo dados...`);
-      await fs.writeFile('src/dias.json', JSON.stringify(config.dias, null, 2));
+      const novo_dias_json = JSON.stringify(config.dias, null, 2);
+      if (novo_dias_json !== dias) {
+        logger.log(`Persistindo dados...`);
+        await fs.writeFile('src/dias.json', novo_dias_json);
+        dias = novo_dias_json;
+      }
 
       const minutos = 0.5;
       logger.log(`Aguardando ${minutos} minutos`);

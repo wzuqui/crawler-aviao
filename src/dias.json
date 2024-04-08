@@ -1,0 +1,100 @@
+[
+  {
+    "data": "31/05/2024",
+    "voos": [
+      {
+        "origin": "FLN",
+        "destination": "XAP",
+        "menor_valor": {
+          "hora_partida": "10:00",
+          "hora_chegada": "14:40",
+          "empresa": "Gol",
+          "tempo": "4 h 40 min",
+          "escala": "1 parada",
+          "valor": 535
+        }
+      },
+      {
+        "origin": "NVT",
+        "destination": "XAP",
+        "menor_valor": {
+          "hora_partida": "09:00",
+          "hora_chegada": "14:40",
+          "empresa": "Gol",
+          "tempo": "5 h 40 min",
+          "escala": "1 parada",
+          "valor": 532
+        }
+      },
+      {
+        "origin": "JOI",
+        "destination": "XAP",
+        "menor_valor": {
+          "hora_partida": "08:00",
+          "hora_chegada": "19:05",
+          "empresa": "VOEPASS, LATAMOperado por Voepasslinhas Aereas for Latam Airlines Brasil, Latam Airlines Brasil",
+          "tempo": "11 h 5 min",
+          "escala": "1 parada",
+          "valor": 572
+        }
+      }
+    ],
+    "menor_valor": {
+      "hora_partida": "09:00",
+      "hora_chegada": "14:40",
+      "empresa": "Gol",
+      "tempo": "5 h 40 min",
+      "escala": "1 parada",
+      "valor": 532
+    }
+  },
+  {
+    "data": "02/06/2024",
+    "voos": [
+      {
+        "origin": "XAP",
+        "destination": "FLN",
+        "menor_valor": {
+          "hora_partida": "17:35",
+          "hora_chegada": "18:30",
+          "empresa": "Azul",
+          "tempo": "55 min",
+          "escala": "Sem escalas",
+          "valor": 484
+        }
+      },
+      {
+        "origin": "XAP",
+        "destination": "NVT",
+        "menor_valor": {
+          "hora_partida": "19:00",
+          "hora_chegada": "23:15",
+          "empresa": "Gol",
+          "tempo": "4 h 15 min",
+          "escala": "1 parada",
+          "valor": 721
+        }
+      },
+      {
+        "origin": "XAP",
+        "destination": "JOI",
+        "menor_valor": {
+          "hora_partida": "20:05",
+          "hora_chegada": "08:25+1",
+          "empresa": "LATAMOperado por Latam Airlines Brasil, Latam Airlines Brasil",
+          "tempo": "12 h 20 min",
+          "escala": "1 parada",
+          "valor": 839
+        }
+      }
+    ],
+    "menor_valor": {
+      "hora_partida": "17:35",
+      "hora_chegada": "18:30",
+      "empresa": "Azul",
+      "tempo": "55 min",
+      "escala": "Sem escalas",
+      "valor": 484
+    }
+  }
+]

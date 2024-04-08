@@ -30,12 +30,12 @@
         "origin": "JOI",
         "destination": "XAP",
         "menor_valor": {
-          "hora_partida": "08:00",
-          "hora_chegada": "19:05",
-          "empresa": "VOEPASS, LATAMOperado por Voepasslinhas Aereas for Latam Airlines Brasil, Latam Airlines Brasil",
-          "tempo": "11 h 5 min",
+          "hora_partida": "09:00",
+          "hora_chegada": "14:40",
+          "empresa": "Gol",
+          "tempo": "5 h 40 min",
           "escala": "1 parada",
-          "valor": 572
+          "valor": 532
         }
       }
     ],

@@ -38,6 +38,7 @@ const config: Config = {
 };
 
 const logger = new Logger();
+let rodando = true;
 
 (async () => {
   const browser = await chromium.launch({
@@ -55,8 +56,7 @@ const logger = new Logger();
     logger.error('Não foi possível carregar os dias');
     return;
   }
-
-  while (true) {
+  while (rodando) {
     try {
       for (const dia of config.dias) {
         const voos = dia.voos;
@@ -74,10 +74,10 @@ const logger = new Logger();
           }
         }
       }
-      logger.log(`Período dados...`);
+      logger.log(`Persistindo dados...`);
       await fs.writeFile('src/dias.json', JSON.stringify(config.dias, null, 2));
 
-      const minutos = 5;
+      const minutos = 0.5;
       logger.log(`Aguardando ${minutos} minutos`);
       await aguardarTempo(minutos * 60 * 1000);
     } catch (e) {
@@ -85,6 +85,11 @@ const logger = new Logger();
     }
   }
 })();
+
+process.on('SIGTERM', async () => {
+  logger.log('Encerrando via SIGTERM');
+  rodando = false;
+});
 
 async function encontradoMenorValor(dia: Dia) {
   if (dia.menor_valor === undefined) {

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/main.ts"
+    "start": "nodemon ./src/main.ts --ignore './src/**/*.json'"
   },
   "keywords": [],
   "author": "",

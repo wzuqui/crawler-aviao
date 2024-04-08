@@ -1,10 +1,10 @@
 export class Logger {
   log(message: string, ...args: any[]) {
-    console.log(`\x1b[36m[[${this.date()}]\x1b[0m ${message}`, args);
+    console.log(`\x1b[36m[${this.date()}]\x1b[0m ${message}`, ...args);
   }
 
   error(...error: any[]) {
-    console.error(`\x1b[31m[[[${this.date()}]\x1b[0m`, error);
+    console.error(`\x1b[31m[${this.date()}]\x1b[0m`, ...error);
   }
 
   date() {
